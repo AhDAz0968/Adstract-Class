@@ -1,17 +1,25 @@
 public class Main {
-    public static void main(String[] args){
-        MotoBike m1 = new Honda(01, 2023, 1500, "Honda", "Wave");
-        MotoBike m2 = new Yamaha(02, 2022, 2500, "Yamaha", "NMAX");
-        MotoBike m3 = new Suzuki(03, 2021, 2000, "Suzuki", "Smast");
 
-        MotoBike[] bikes = {m1, m2, m3};
+    public static void main(String[] args) {
 
-        for(MotoBike bike : bikes){
-            bike.display();
-            bike.startEngine();
-            bike.drive();
-            bike.stopEngine();
-            System.out.println(" ");
-        }
+        
+        MusicalInstrument piano = new MusicalInstrument(101,3000,"Keyboard Instrument","Yamaha");
+
+        
+        MusicalInstrument drum = new MusicalInstrument(102,1500,"Percussion Instrument","Roland");
+
+        
+        MusicalInstrument guitar = new MusicalInstrument(103,2000,"String Instrument","Fender");
+
+        
+        piano.displayPiano();
+
+        System.out.println();
+
+        drum.displayDrum();
+
+        System.out.println();
+
+        guitar.displayGuitar();
     }
 }
